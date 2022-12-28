@@ -1,0 +1,9 @@
+services:
+  debian-systemd:
+    build:
+      context: .
+    container_name: debian-systemd
+    image: debian-systemd
+    privileged: true
+    # cap_add:
+    #   - "SYS_ADMIN"
